@@ -144,6 +144,20 @@ h1{
   Anthony’s Timer Pro © 2025 • Built with ❤️ by Anthony’s Websites
 </div>
 
+<script>
+  const btn = document.getElementById("downloadBtn");
+  const os = navigator.userAgent;
+
+  if (os.includes("Windows")) {
+    btn.href = "https://github.com/anthonyk154/timer/releases/latest/download/AnthonyTimerProSetup.exe";
+    btn.innerText = "⬇ Download for Windows";
+  } else {
+    btn.innerText = "Windows App Available";
+    btn.style.opacity = 0.5;
+    btn.style.cursor = "not-allowed";
+  }
+</script>
+
 
 </body>
 </html>
